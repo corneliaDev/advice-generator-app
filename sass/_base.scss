@@ -1,0 +1,64 @@
+/* ## Colors
+
+### Primary
+
+- Light Cyan: hsl(193, 38%, 86%)
+- Neon Green: hsl(150, 100%, 66%)
+
+### Neutral
+
+- Grayish Blue: hsl(217, 19%, 38%)
+- Dark Grayish Blue: hsl(217, 19%, 24%)
+- Dark Blue: hsl(218, 23%, 16%)
+ */
+
+:root {
+  --color-primary-light-cyan: hsl(193, 38%, 86%);
+  --color-primary-green: hsl(150, 100%, 66%);
+
+  --color-gray-blue: hsl(217, 19%, 38%);
+  --color-dark-gray: hsl(217, 19%, 24%);
+  --color-dark-blue: hsl(218, 23%, 16%);
+
+  --font-primary: 'Manrope', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //1rem = 10px, 10/16 = 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+
+  background-color: var(--color-dark-blue);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+//front-end mentor code
+
+.attribution {
+  margin-top: 4rem;
+  font-size: 11px;
+  padding: 2rem;
+  box-shadow: 0 20px 30px 0 rgba(52, 58, 64, 0.07);
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

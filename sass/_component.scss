@@ -1,10 +1,7 @@
 .advice {
-  width: 50rem;
-  height: 33rem;
   background-color: var(--color-dark-gray);
   font-weight: 800;
   border-radius: 15px;
-  padding: 4rem;
 
   position: relative;
 
@@ -14,6 +11,12 @@
   justify-content: space-between;
 
   gap: 2.5rem;
+
+  @include respond(desktop) {
+    width: 50rem;
+    height: 33rem;
+    padding: 4rem;
+  }
 
   @include respond(mobil) {
     width: 35rem;

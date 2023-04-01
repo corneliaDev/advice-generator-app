@@ -73,6 +73,7 @@ body {
   background-color: var(--color-dark-gray);
   font-weight: 800;
   border-radius: 15px;
+  padding: 5rem;
   width: 60rem;
   height: 40rem;
   position: relative;
